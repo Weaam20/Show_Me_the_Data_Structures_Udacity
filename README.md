@@ -21,9 +21,10 @@ transmission time from a sender to receiver. The sender encodes the data, and th
 for both encoding and decoding. In the first phase we have to build the Huffman Tree we will recive a message we have to compression it but how? 
 
 
-  ## Encoding :
-  **Phase 1 | Build the Huffman Tree : **
-  A Huffman tree is built in a bottom-up approach by useing Priority queue
+  ### Encoding :
+  ** Phase 1 | Build the Huffman Tree : **
+  
+      A Huffman tree is built in a bottom-up approach by useing Priority queue
      
       - First, determine the frequency of each character in the message. In our example, the following table presents the frequency of each character.
         ![photo_2021-08-07_22-37-32](https://user-images.githubusercontent.com/84277488/128612104-9b66609a-14ea-4d24-b938-b45a54a38583.jpg)
@@ -39,13 +40,13 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
       
       - Repeat steps #3 and #4 until there is a single element left in the priority queue. 
       
- **Phase 2 | Generate the Encoded Data : ** 
+  ** Phase 2 | Generate the Encoded Data : ** 
  
       - Based on the Huffman tree, generate unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to 
       the leaf node.
       
- ## Decoding :
- Once we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data
+ ### Decoding :
+      Once we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data
  
       - Declare a blank decoded string.
       - Pick a bit from the encoded data, traversing from left to right.
@@ -56,21 +57,16 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
         
       - Repeat steps #2 and #3 until the encoded data is completely traversed.
       
-**Problem 4 | Active Directory : **  
+** Problem 4 | Active Directory : **  
 In Windows Active Directory, a group can consist of user(s) and group(s) themselves. We can construct this hierarchy as such. Where User is represented by str representing
 their ids. We have to write a function that provides an efficient look up of whether the user is in a group.
 
-**Problem 5 | Blockchain : ** 
+** Problem 5 | Blockchain : ** 
 A Blockchain is a sequential chain of records, similar to a linked list. Each block contains some information and how it is connected related to the other blocks in the chain.
 Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. For our blockchain we will be using a SHA-256 hash, the Greenwich Mean Time 
 when the block was created, and text strings as the data. In this problem we have to implementation blockchain.
 
-**Problem 6 | Union and Intersection : ** 
+** Problem 6 | Union and Intersection : ** 
 In this problem, We have to fill out the union and intersection functions. The union of two sets A and B is the set of elements which are in A, in B, or in both A and B. 
 The intersection of two sets A and B, denoted by A ∩ B, is the set of all objects that are members of both sets A and B. We will receive two linked lists and we have 
 to find union and intersection items between these lists.
-
-
-
-
-
