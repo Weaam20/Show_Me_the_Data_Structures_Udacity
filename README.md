@@ -24,7 +24,7 @@ transmission time from a sender to receiver. The sender encodes the data, and th
 for both encoding and decoding. In the first phase we have to build the Huffman Tree we will recive a message we have to compression it but how? 
 
 
-  ### Encoding 
+  **Encoding**
   **Phase 1 | Build the Huffman Tree :**
       A Huffman tree is built in a bottom-up approach by useing Priority queue.
       
@@ -32,8 +32,8 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
       Based on the Huffman tree, generate a unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to 
       the leaf node.
       
-  ### Decoding 
-      Once we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data.
+  **Decoding** 
+     Once we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data.
       
 **Problem 4 | Active Directory :** 
 
