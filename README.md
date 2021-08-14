@@ -10,7 +10,7 @@ We will write up a clean and efficient answer in Python.
 
 In this problem, our goal will be to design a data structure known as a Least Recently Used (LRU) cache. An LRU cache is a type of cache in which we remove the least 
 recently used entry when the cache memory reaches its limit. For the current problem, we have to design LRU with a data structure that can search, insert and delete in O(1). 
-In this problem, I used two data structures a  dictionary and a doubly-linked list why? dictionary for fast lookup and doubly-linked list for insert and delete in O(1).
+In this problem, I used two data structures a  dictionary and a doubly-linked list why? dictionary for fast lookup and doubly-linked list for insert and delete in O(1) time.
 
 **Problem 2 | Finding Files (Recursion) :**
 
@@ -26,38 +26,14 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
 
   ### Encoding 
   **Phase 1 | Build the Huffman Tree :**
-  
-      A Huffman tree is built in a bottom-up approach by useing Priority queue
-     
-      - First, you determine the frequency of each character in the message. In our example, the following table presents the frequency of each character.
-
-      - Each row in the table above can be represented as a node having a character, frequency, left child, and right child. In the next step, we will repeatedly require
-      to pop-out the node having the lowest frequency. Therefore, you build and sort a list of nodes in the order lowest to highest frequencies.
-      
-      - Pop-out two nodes with the minimum frequency from the priority queue.
-      
-      - Create a new node with a frequency which equals to the sum of the two nodes picked in the above step. This new node would become an internal node in the Huffman tree, 
-      and the two nodes would become the children. The lower frequency node becomes a left child, and the higher frequency node becomes the right child. Reinsert the newly
-      created node back into the priority queue.
-      
-      - Repeat steps #3 and #4 until you have a single element left in the priority queue. 
+      A Huffman tree is built in a bottom-up approach by useing Priority queue.
       
   **Phase 2 | Generate the Encoded Data :** 
- 
-      - Based on the Huffman tree, generate a unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to 
+      Based on the Huffman tree, generate a unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to 
       the leaf node.
       
   ### Decoding 
-      Once we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data
- 
-      - Declare a blank decoded string.
-      - Pick a bit from the encoded data, traversing from left to right.
-      - Start traversing the Huffman tree from the root.
-      
-        - If the current bit of encoded data is 0, move to the left child, else move to the right child of the tree if the current bit is 1.
-        - If a leaf node is encountered, append the (alphabetical) character of the leaf node to the decoded string.
-        
-      - Repeat steps #2 and #3 until the encoded data is completely traversed.
+      Once we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data.
       
 **Problem 4 | Active Directory :** 
 
