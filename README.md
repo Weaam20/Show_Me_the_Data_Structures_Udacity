@@ -6,7 +6,7 @@ We will write up a clean and efficient answer in Python.
 
 ## Questions 
 
-###Problem 1 | LRU Cache :
+### Problem 1 | LRU Cache :
 
 In this problem, our goal will be to design a data structure known as a Least Recently Used (LRU) cache. An LRU cache is a type of cache in which we remove the least 
 recently used entry when the cache memory reaches its limit. For the current problem, we have to design LRU with a data structure that can search, insert and delete in O(1). 
