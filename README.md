@@ -44,7 +44,7 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
       
   **Phase 2 | Generate the Encoded Data :** 
  
-      - Based on the Huffman tree, generate unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to 
+      - Based on the Huffman tree, generate a unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to 
       the leaf node.
       
   ### Decoding 
@@ -61,8 +61,7 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
       
 **Problem 4 | Active Directory :** 
 
-In Windows Active Directory, a group can consist of user(s) and group(s) themselves. We can construct this hierarchy as such. Where User is represented by str representing
-their ids. We have to write a function that provides an efficient look up of whether the user is in a group.
+In Windows Active Directory, a group can consist of user(s) and group(s) themselves. We have to write a function that provides an efficient look up of whether the user is in a group.
 
 **Problem 5 | Blockchain :** 
 
