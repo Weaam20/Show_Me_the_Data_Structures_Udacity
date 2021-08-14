@@ -67,10 +67,10 @@ In Windows Active Directory, a group can consist of user(s) and group(s) themsel
 
 A Blockchain is a sequential chain of records, similar to a linked list. Each block contains some information and how it is connected related to the other blocks in the chain.
 Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. For our blockchain we will be using a SHA-256 hash, the Greenwich Mean Time 
-when the block was created, and text strings as the data. In this problem we have to implementation blockchain.
+when the block was created, and text strings as data. In this problem we have to implementation blockchain.
 
 **Problem 6 | Union and Intersection :** 
 
 In this problem, We have to fill out the union and intersection functions. The union of two sets A and B is the set of elements which are in A, in B, or in both A and B. 
 The intersection of two sets A and B, denoted by A ∩ B, is the set of all objects that are members of both sets A and B. We will receive two linked lists and we have 
-to find union and intersection items between these lists.
+to find the union and intersection items between these lists.
