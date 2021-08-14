@@ -29,18 +29,18 @@ for both encoding and decoding. In the first phase we have to build the Huffman 
   
       A Huffman tree is built in a bottom-up approach by useing Priority queue
      
-      - First, determine the frequency of each character in the message. In our example, the following table presents the frequency of each character.
+      - First, you determine the frequency of each character in the message. In our example, the following table presents the frequency of each character.
 
       - Each row in the table above can be represented as a node having a character, frequency, left child, and right child. In the next step, we will repeatedly require
-      to pop-out the node having the lowest frequency. Therefore, build and sort a list of nodes in the order lowest to highest frequencies.
+      to pop-out the node having the lowest frequency. Therefore, you build and sort a list of nodes in the order lowest to highest frequencies.
       
       - Pop-out two nodes with the minimum frequency from the priority queue.
       
-      - Create a new node with a frequency equal to the sum of the two nodes picked in the above step. This new node would become an internal node in the Huffman tree, 
+      - Create a new node with a frequency which equals to the sum of the two nodes picked in the above step. This new node would become an internal node in the Huffman tree, 
       and the two nodes would become the children. The lower frequency node becomes a left child, and the higher frequency node becomes the right child. Reinsert the newly
       created node back into the priority queue.
       
-      - Repeat steps #3 and #4 until there is a single element left in the priority queue. 
+      - Repeat steps #3 and #4 until you have a single element left in the priority queue. 
       
   **Phase 2 | Generate the Encoded Data :** 
  
